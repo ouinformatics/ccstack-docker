@@ -9,6 +9,6 @@ RUN mkdir -p /data/configdb
 
 EXPOSE 27019
 
-VOLUME /data/db
+VOLUME /data/configdb
 
 ENTRYPOINT /usr/bin/mongod --configsvr
