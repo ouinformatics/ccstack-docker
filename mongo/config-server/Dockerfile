@@ -9,6 +9,8 @@ RUN mkdir -p /data/configdb
 
 EXPOSE 27019
 
-VOLUME /data/db
+ADD mongod.conf /etc/mongod.conf
 
-ENTRYPOINT /usr/bin/mongod --configsvr
+VOLUME ["/data/configdb"]
+
+ENTRYPOINT /usr/bin/mongod -f /etc/mongod.conf 
