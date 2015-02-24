@@ -13,4 +13,4 @@ ADD mongod.conf /etc/mongod.conf
 
 VOLUME /data/
 
-ENTRYPOINT /usr/bin/mongod --config /etc/mongod.conf
+ENTRYPOINT /usr/bin/mongod -f /etc/mongod.conf
