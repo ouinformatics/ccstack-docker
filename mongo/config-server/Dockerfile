@@ -11,6 +11,6 @@ EXPOSE 27019
 
 ADD mongod.conf /etc/mongod.conf
 
-VOLUME ["/data/configdb"]
+VOLUME /data/
 
-ENTRYPOINT /usr/bin/mongod -f /etc/mongod.conf 
+ENTRYPOINT /usr/bin/mongod --config /etc/mongod.conf 
