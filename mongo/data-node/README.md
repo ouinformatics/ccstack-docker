@@ -4,5 +4,5 @@ Edit mongod.conf as needed and set up a directory for mongo db files to persist 
 
 ```
 docker build -t mongo-datanode .
-docker run -v <path to node DB storage>:/data -d mongo-datanode
+docker run -d -p 27017:27017 -v <path to node DB storage>:/data  mongo-datanode
 ```
