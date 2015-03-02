@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Mark Stacy
-# arg_host added to accomidate boot2docker
+# arg_host added to accommodate boot2docker
 #   ./run.sh <boot2docker ip>
 #
 # Default is localhost 
