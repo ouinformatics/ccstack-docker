@@ -1,3 +1,11 @@
+#!/bin/sh
+#
+# Mark Stacy
+# arg_host added to accomidate boot2docker
+#   ./run.sh <boot2docker ip>
+#
+# Default is localhost 
+#   ./run.sh
 
 arg_host=$1
 if [ -z "$1" ]
