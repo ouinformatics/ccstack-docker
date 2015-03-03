@@ -17,7 +17,7 @@ docker run -d -p 5672:5672 -p 15672:15672 cybercom/rabbitmq
 
 source config.sh
 #sleep to allow for container ports to become active
-until wget $arg_host:15672/cli/rabbitmqadmin 
+until wget $arg_host:15672/cli/rabbitmqadmin -O rabbitmqadmin 
 do
     sleep 5
 done
