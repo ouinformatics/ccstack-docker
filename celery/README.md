@@ -2,7 +2,8 @@ Cybercom Celery
 ======
 This docker build was copied from [fcoelho/docker-images/celery](https://github.com/fcoelho/docker-images/tree/master/celery). Wanted to fork but had problem forking only celery part of huge repo.
 
-        docker run -d -v <celery code>:/code -v <log directory>:/log -v <env Directory>:/env cybercom/celery /run.sh
+    docker run -d --net=host -v <celery code>:/code -v <log directory>:/log -v <env Directory>:/env cybercom/celery 
+
 Celery
 ======
 
