@@ -11,5 +11,7 @@ VOLUME  ["/log", "/env", "/code"]
 
 ADD run.sh /run.sh
 ADD run-server.sh /run-server.sh
+RUN chmod +x /run.sh
+RUN chmod +x /run-server.sh
 
 CMD ["/run.sh"]
