@@ -1,3 +1,6 @@
 [submodule "compose/apps/api"]
 	path = compose/apps/api
 	url = https://github.com/ok-water-survey/api
+[submodule "api"]
+	path = api
+	url = https://github.com/ouinformatics/ccstack-docker/
