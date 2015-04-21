@@ -13,7 +13,7 @@ if [ -z "$1" ]
     arg_host="localhost"
 fi
 echo ${arg_host}
-docker run -d -p 5672:5672 -p 15672:15672 cybercom/rabbitmq 
+docker run -d -p 5672:5672 -p 15672:15672 rabbitmq 
 
 source config.sh
 #sleep to allow for container ports to become active
