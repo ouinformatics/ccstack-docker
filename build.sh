@@ -1,16 +1,16 @@
 #!/bin/sh
 
 ## Build Mongo Docker
-docker build docker/mongo/data-node -t mongo-datanode
+docker build -t mongo-datanode docker/mongo/data-node
 
 ## Build RabbitMQ Docker
-docker build docker/rabbitmq/ -t rabbitmq
+docker build -t rabbitmq docker/rabbitmq/
 
 ## Celery
-docker build docker/celery -t celery
+docker build -t celery docker/celery
 
 ## Nginx - not implemented yet
 # docker build docker/nginx
 
 ## API
-docker build docker/api -t api
+docker build -t api docker/api
