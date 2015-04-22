@@ -16,6 +16,6 @@ else
 	/env/bin/pip install celery $PYPI_FLAGS
 fi
 
-chown celery:celery -R /log
-
-su -p celery -c "/run-server.sh"
+#chown celery:celery -R /log
+#su -p celery -c "/run-server.sh"
+/run-server.sh
