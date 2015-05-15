@@ -16,3 +16,6 @@ docker exec -t $container rabbitmqctl set_permissions -p ${vhost} ${user} ".*" "
 ## Celery
 source $(pwd)/config/celery_config.sh
 docker run -d --net=host -e "C_FORCE_ROOT=true" -e "docker_worker=${docker_worker}" -e "docker_username=${docker_username}" -e "C_FORCE_ROOT=true" -e "CELERY_CONCURRENCY=${CELERY_CONCURRENCY}" -v celery/code:/code -v celery/log:/log -v celery/env:/env celery
+
+#Cybercom API
+docker run -d  --net=host -v $(pwd)/api_config.py:/usr/src/app/api/config.py api
